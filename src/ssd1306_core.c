@@ -370,9 +370,10 @@ void ssd1306_print_char(char c) {
 
   ssd1306_set_caret(col, row);
 }
-void ssd1306_print(const char* p) {
-  while (*p) {
-    ssd1306_print_char(*p++);
+
+void ssd1306_print(const char* str) {
+  while (*str) {
+    ssd1306_print_char(*str++);
   }
 }
 
